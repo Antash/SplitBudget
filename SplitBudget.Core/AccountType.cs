@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SplitBudget.Core
 {
-    enum AccountType
+    public enum AccountType
     {
         Debet,
         Credit,

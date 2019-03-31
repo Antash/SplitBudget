@@ -4,13 +4,13 @@ using System.Text;
 
 namespace SplitBudget.Core
 {
-    class Debt : Account
+    class Credit : Account
     {
-        private User Creditor { get; }
+        public decimal Limit { get; }
 
         protected override AccountType Type => AccountType.Credit;
 
-        public Debt(string name, string currency) : base(name, currency)
+        public Credit(string name, string currency) : base(name, currency)
         {
         }
     }

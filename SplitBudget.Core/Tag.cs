@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SplitBudget.Core
+﻿namespace SplitBudget.Core
 {
     public class Tag
     {
-        private string Name { get; }
+        public string Name { get; } = "Uncategorized";
 
-        private string Description { get; }
+        public string Description { get; }
     }
 }

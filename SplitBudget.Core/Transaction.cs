@@ -2,16 +2,22 @@
 
 namespace SplitBudget.Core
 {
-    abstract class Transaction
+    public class Transaction
     {
-        private decimal Amount { get; }
+        public Transaction(Account source, Account destination, TransactionData data)
+        {
+            Source = source;
+            Destination = destination;
+            Data = data;
+            Tags = new List<Tag>() { new Tag() };
+        }
 
-        private decimal OriginalCurrencyAmount { get; }
+        public TransactionData Data { get; }
 
-        private string Description { get; }
+        public Account Source { get; }
 
-        private string OriginalCurrency { get; }
+        public Account Destination { get; }
 
-        private List<Tag> Tags { get; }
+        public IList<Tag> Tags { get; }
     }
 }

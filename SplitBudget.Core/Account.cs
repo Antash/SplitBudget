@@ -1,15 +1,21 @@
 ﻿namespace SplitBudget.Core
 {
-    class Account
+    public class Account
     {
+        public Account(string name, string currency)
+        {
+            Name = name;
+            Currency = currency;
+        }
+
         private string Name { get; }
 
-        private string Currency { get; }
+        internal string Currency { get; }
 
-        private decimal Balance { get; }
+        internal decimal Balance { get; private set; }
 
         private User Owner { get; }
 
-        protected virtual AccountType Type { get; }
+        protected virtual AccountType Type => AccountType.Debet;
     }
 }

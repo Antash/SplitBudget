@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\src\components\" />
     <Folder Include="Controllers\" />
     <Folder Include="Pages\" />
   </ItemGroup>
